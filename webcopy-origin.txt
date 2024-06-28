@@ -1,0 +1,427 @@
+Uri: https://uiparadox.co.uk/templates/ebazar/
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\index-1.htm
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/about.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\about-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/app.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\app-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\bootstrap.min-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/font-awesome.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\font-awesome-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/slick-theme.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\slick-theme-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/slick.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\slick-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/favicon-light.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\favicon-light-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/cart.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\cart-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/index.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\index-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/product-detail.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\product-detail-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/shop.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\shop-1.html
+Content Type: text/html
+
+out-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/app.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\app-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/ajax-loader.gif
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\ajax-loader-1.gif
+Content Type: image/gif
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-brands-400.eot
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-brands-400-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-brands-400.eot?
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-brands-400-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-brands-400.svg
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-brands-400-1.svg
+Content Type: image/svg+xml
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-brands-400-1.ttf
+Content Type: font/ttf
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-brands-400.woff
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-brands-400-1.woff
+Content Type: font/woff
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-brands-400-1.woff2
+Content Type: font/woff2
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-duotone-900.eot
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-duotone-900-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-duotone-900.eot?
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-duotone-900-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-duotone-900.ttf
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-duotone-900-1.ttf
+Content Type: font/ttf
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-duotone-900.woff
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-duotone-900-1.woff
+Content Type: font/woff
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-duotone-900.woff2
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-duotone-900-1.woff2
+Content Type: font/woff2
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-light-300.eot
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-light-300-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-light-300.eot?
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-light-300-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-light-300.ttf
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-light-300-1.ttf
+Content Type: font/ttf
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-light-300.woff
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-light-300-1.woff
+Content Type: font/woff
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-light-300.woff2
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-light-300-1.woff2
+Content Type: font/woff2
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-regular-400.eot
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-regular-400-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-regular-400.eot?
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-regular-400-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-regular-400.svg
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-regular-400-1.svg
+Content Type: image/svg+xml
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-regular-400-1.ttf
+Content Type: font/ttf
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-regular-400.woff
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-regular-400-1.woff
+Content Type: font/woff
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-regular-400-1.woff2
+Content Type: font/woff2
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-solid-900.eot
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-solid-900-2.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-solid-900.eot?
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-solid-900-3.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-solid-900.svg
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-solid-900-1.svg
+Content Type: image/svg+xml
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-solid-900-1.ttf
+Content Type: font/ttf
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-solid-900.woff
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-solid-900-1.woff
+Content Type: font/woff
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/fonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\fonts\fa-solid-900-1.woff2
+Content Type: font/woff2
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\bootstrap.min-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/font-awesome.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\font-awesome-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/slick-theme.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\slick-theme-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/css/vendor/slick.css
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\css\vendor\slick-1.css
+Content Type: text/css
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/js/app.js
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\js\app-1.js
+Content Type: text/javascript
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/js/vendor/bootstrap.min.js
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\js\vendor\bootstrap.min-1.js
+Content Type: text/javascript
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/js/vendor/jquery-3.6.3.min.js
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\js\vendor\jquery-3.6.3.min-1.js
+Content Type: text/javascript
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/js/vendor/jquery-appear.js
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\js\vendor\jquery-appear-1.js
+Content Type: text/javascript
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/js/vendor/jquery-validator.js
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\js\vendor\jquery-validator-1.js
+Content Type: text/javascript
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/js/vendor/jquery.countdown.min.js
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\js\vendor\jquery.countdown.min-1.js
+Content Type: text/javascript
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/js/vendor/slick.min.js
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\js\vendor\slick.min-1.js
+Content Type: text/javascript
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/about/about-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\about\about-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/banner/banner-bg.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\banner\banner-bg-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/banner/banner.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\banner\banner-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/banner/hero-banner.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\banner\hero-banner-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/banner/object-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\banner\object-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/favicon-light.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\favicon-light-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/brand.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\brand-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/food.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\food-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/icon.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\icon-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/organic.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\organic-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/quality.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\quality-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/Vector-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\Vector-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/Vector-2.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\Vector-2-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/icon/Vector.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\icon\Vector-3.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/logo-dark.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\logo-dark-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/logo.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\logo-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/c-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\c-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/c-2.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\c-2-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/cart/c-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\cart\c-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/cart/c-2.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\cart\c-2-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/cart/c-3.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\cart\c-3-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-10.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-10-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-11.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-11-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-12.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-12-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-13.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-13-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-14.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-14-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-15.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-15-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-2.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-2-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-3.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-3-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-4.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-4-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-5.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-5-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-6.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-6-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-7.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-7-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-8.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-8-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/p-9.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\p-9-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/pd-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\pd-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/sp-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\sp-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/sp-2.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\sp-2-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/sp-3.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\sp-3-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/products/sp-4.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\products\sp-4-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/user/Image-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\user\Image-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/user/Image-2.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\user\Image-2-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/user/Image.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\user\Image-3.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/user/u-1.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\user\u-1-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/user/u-2.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\user\u-2-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/assets/media/user/u-3.png
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\assets\media\user\u-3-1.png
+Content Type: image/png
+
+Uri: https://uiparadox.co.uk/templates/ebazar/cart.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\cart-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/checkout.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\checkout-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/index.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\index-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/product-detail.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\product-detail-1.html
+Content Type: text/html
+
+Uri: https://uiparadox.co.uk/templates/ebazar/shop.html
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\templates\ebazar\shop-1.html
+Content Type: text/html
+
+Uri: https://www.googletagmanager.com/gtag/js?id=UA-266165434-1
+File Name: C:\Downloaded Web Sites\uiparadox.co.uk\gtag\js-2
+Content Type: application/javascript
+

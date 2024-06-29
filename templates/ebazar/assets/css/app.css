@@ -46,7 +46,7 @@ ol.list-style {
 
 ul.list-style li::marker,
 ol.list-style li::marker {
-  color: #d355ec;
+  color: #a45ec4;
 }
 
 .unstyled {

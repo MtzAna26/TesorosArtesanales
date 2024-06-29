@@ -1,3 +1,54 @@
+<link rel="stylesheet" href="assets/css/app.css">
+<section class="testimonials pt-48 pb-48">
+        <div class="container">
+          <div class="heading text-center">
+            <h2>Reseñas de Clientes</h2>
+          </div>
+          <div class="testimonial-slider">
+            <div class="testimonial-box">
+              <div class="upper-row">
+                <img src="assets/media/user/yaz.jpg" alt="">
+                <h6 class="name">Yazmin Salas</h6>
+              </div>
+              <p class="review"> 
+                Me encanta que los juguetes de Tesoros Artesanales sean ecológicos y 
+                hechos con tanto cariño. Los sonajeros y 
+                mordedores para bebés son perfectos para mi pequeño. ¡Totalmente recomendados!
+              </p>
+            </div>
+            <div class="testimonial-box">
+              <div class="upper-row">
+                <img src="assets/media/user/Image-1.png" alt="">
+                <h6 class="name">Gonzalo Hernandez</h6>
+              </div>
+              <p class="review">Compré un rompecabezas de madera y es perfecto para mantener a mis hijos 
+                entretenidos y al mismo tiempo desarrollar sus habilidades cognitivas. 
+                Además, los colores y el diseño son preciosos.</p>
+            </div>
+            <div class="testimonial-box">
+              <div class="upper-row">
+                <img src="assets/media/user/Image-2.png" alt="">
+                <h6 class="name">Richard Johnson</h6>
+              </div>
+              <p class="review">
+                Los juguetes al aire libre han sido un éxito en casa. Mis hijos disfrutan muchísimo jugando en el jardín con los juegos que compramos. 
+                Son resistentes y perfectos para todas las edades.
+              </p>
+            </div>
+            <div class="testimonial-box">
+              <div class="upper-row">
+                <img src="assets/media/user/danielaguevara.jpg" alt="">
+                <h6 class="name">Daniela Guevara</h6>
+              </div>
+              <p class="review"> 
+                ¡Estoy encantada con los juguetes de Tesoros Artesanales! 
+                Compré una muñeca de trapo para mi hija y no puede dejar de jugar con ella. La calidad es excepcional y 
+                los detalles hechos a mano son simplemente hermosos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 <footer class="footer">
         <div class="container">
           <div class="main">

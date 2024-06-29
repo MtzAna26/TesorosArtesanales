@@ -631,7 +631,7 @@
             </div>
           </div>
           <div class="text-center">
-            <a href="shop.html" class="cus-btn bordered">Descubrir más</a>
+          <button id="load-more-btn" class="cus-btn bordered">Descubrir más</button>
           </div>
         </div>
       </section>

@@ -12,7 +12,7 @@
                     <span>OFF</span>
                   </div>
                   <h4>YOYO</h4>
-                  <a href="shop.html" class="cus-btn dark">Shop Now</a>
+                  <a href="shop.php" class="cus-btn dark">Shop Now</a>
                 </div>
               </div>
             </div>

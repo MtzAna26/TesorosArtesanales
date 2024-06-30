@@ -10,10 +10,10 @@
       <div class="collapse navbar-collapse text-start" id="mynavbar">
         <ul class="navbar-nav mainmenu m-0">
           <li class="menu-item">
-            <a href="index.php" class="active">Home</a>
+            <a href="inicio.php" class="active">Home</a>
           </li>
           <li class="menu-item">
-            <a href="shop.html">Shop</a>
+            <a href="shop.php">Shop</a>
           </li>
           <li class="menu-item">
             <a href="about.html">About</a>

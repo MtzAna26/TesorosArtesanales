@@ -2708,7 +2708,7 @@ strong {
 
 
 .page-start-banner {
-  background: url(../media/banner/banner-artesanias.jpg);
+  background: url(../media/banner/fondoshop.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -2769,7 +2769,7 @@ strong {
 
 .sidebar {
   border-radius: 10px;
-  background: #725e50;
+  background: rgb(255, 255, 255);
   border-radius: 0px 0px 25px 25px;
   box-shadow: 42px 42px 24px rgba(0, 0, 0, 0.01), 24px 24px 20px rgba(0, 0, 0, 0.03), 11px 11px 15px rgba(0, 0, 0, 0.04), 3px 3px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
 }
@@ -2780,7 +2780,7 @@ strong {
 }
 .sidebar .content-block {
   padding: 32px 24px 16px;
-  border-top: 3px solid #EC7755;
+  border-top: 3px solid #225c00;
 }
 @media only screen and (min-width: 1199px) and (max-width: 1399px) {
   .sidebar .content-block {
@@ -2800,12 +2800,12 @@ strong {
   margin-bottom: 32px;
 }
 .sidebar .category-filter .search-form form .input-group .form-control {
-  border-bottom: 2px solid #54575C;
+  border-bottom: 2px solid #fdfdfd;
   padding: 0 8px 9px;
-  color: #54575C;
+  color: #fafcff;
 }
 .sidebar .category-filter .search-form form .input-group .form-control:focus {
-  border-bottom: 2px solid #54575C;
+  border-bottom: 2px solid #fcfcfc;
 }
 .sidebar .category-filter .search-form form .input-group .form-control::placeholder {
   color: #54575C;
@@ -2828,11 +2828,11 @@ strong {
   font-weight: 400;
   font-size: 21px;
   line-height: 140%;
-  color: #54575C;
+  color: #222124;
   transition: all 0.5s ease-in-out;
 }
 .sidebar .category-filter ul li a:hover {
-  color: #EC7755;
+  color: #79236f;
   transition: all 0.5s ease-in-out;
 }
 .sidebar .popular-products .product {
@@ -2847,18 +2847,18 @@ strong {
   font-size: 21px;
   line-height: 140%;
   margin-bottom: 8px;
-  color: #2C2D2F;
+  color: #000000;
   transition: all 0.5s ease-in-out;
 }
 .sidebar .popular-products .product .detail h6:hover {
   transition: all 0.5s ease-in-out;
-  color: #EC7755;
+  color: #79236f;
 }
 .sidebar .popular-products .product .detail span {
   font-weight: 400;
   font-size: 21px;
   line-height: 140%;
-  color: #EC7755;
+  color: #000000;
 }
 
 .product-card {

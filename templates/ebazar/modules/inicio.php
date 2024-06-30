@@ -7,7 +7,7 @@
   <meta name="description" content="Ebazar HTML5 Template">
   <title>TESOROS ARTESANALES</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/templates/ebazar/assets/media/tesoroslogo.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/media/tesoroslogo.jpg">
   <!-- All CSS files -->
   <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">

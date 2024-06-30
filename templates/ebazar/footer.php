@@ -76,9 +76,6 @@
                   <li>
                     <a href="shop.html">Didácticos</a>
                   </li>
-                  <li>
-                    <a href="shop.html">Aire Libre</a>
-                  </li>
                 </ul>
               </div>
               <div class="col-lg-3">
@@ -91,7 +88,7 @@
                     <a href="cart.html">Cart</a>
                   </li>
                   <li>
-                    <a href="shop.html">Shop</a>
+                    <a href="shop.php">Shop</a>
                   </li>
                   <li>
                     <a href="product-detail.html">Product Detail</a>

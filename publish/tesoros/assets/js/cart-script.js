@@ -1,33 +1,4 @@
-   <!-- Cart Popup Start -->
-
-
-
-   <aside id="sidebar-cart">
-      <a href="javascript:;" class="close-button close-popup">
-          <span class="close-icon">X</span>
-      </a>
-      <div class="mb-32">
-          <div class="vr-line"></div>
-      </div>
-      <div class="vr-line mb-24"></div>
-  
-      <!-- Contenedor del carrito -->
-      <section id="cart-container">
-          <h3 class="h-39 color-dark-2 fw-400 font-sec mb-32">ARTÍCULOS DE LA LISTA DE DESEOS<span class="h-27"></span></h3>
-          <ul id="cart-items"></ul>
-          <p>Total: $<span id="cart-total">0.00</span></p>
-      </section>
-  
-      <div class="action-buttons">
-          <a href="cart.html" class="cus-btn">VIEW CART</a>
-          <a href="checkout.html" class="cus-btn active-btn">CHECKOUT</a>
-      </div>
-  </aside>
-    <div id="sidebar-cart-curtain" class="close-popup"></div>
-    <!-- Cart Popup End -->
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     let cart = [];
     let cartTotal = 0;
 
@@ -101,13 +72,3 @@
         updateCart();
     });
 });
-  </script>
-
-<script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/jquery-appear.js"></script>
-    <script src="assets/js/vendor/jquery-validator.js"></script>
-    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
-    <!-- Site Scripts -->
-    <script src="assets/js/app.js"></script>

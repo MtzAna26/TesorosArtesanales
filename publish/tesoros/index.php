@@ -19,38 +19,27 @@
 
 <body>
 
-
   <?php require('header.php'); ?>
-
   <?php require('banner.php'); ?>
-
   <?php require('categories.php'); ?>
-
   <?php require('cart.php'); ?>
-
   <?php require('products.php'); ?>
-
   <?php require('existent.php'); ?>
-
   <?php require('footer.php'); ?>
 
   <?php
-  if (empty($_REQUEST["view"])) {
-    echo '<script type="text/javascript">window.location.replace("inicio.php");</script>';
-  } else if (file_exists("modules/" . $_REQUEST["view"] . ".php")) {
+  if (!empty($_REQUEST["view"]) && file_exists("modules/" . $_REQUEST["view"] . ".php")) {
     include_once "modules/" . $_REQUEST["view"] . ".php";
   } else {
-    echo '<script type="text/javascript">window.location.replace("inicio.php");</script>';
+    include_once "modules/inicio.php";
   }
   ?>
-
 
   <!-- JavaScript  -->
   <script src="assets/js/vendor/jquery.min.js"></script>
   <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
   <script src="assets/js/vendor/slick.min.js"></script>
   <script src="assets/js/app.js"></script>
-
 
 </body>
 

@@ -68,13 +68,13 @@
                 <h5 class="title">Categorías</h5>
                 <ul class="list-unstyled links">
                   <li>
-                    <a href="shop.html">Juguetes de Madera</a>
+                    <a href="shop.php">Juguetes de Madera</a>
                   </li>
                   <li>
-                    <a href="shop.html">Muñecos & Figuras</a>
+                    <a href="shop.php">Muñecos & Figuras</a>
                   </li>
                   <li>
-                    <a href="shop.html">Didácticos</a>
+                    <a href="shop.php">Didácticos</a>
                   </li>
                 </ul>
               </div>
@@ -82,7 +82,7 @@
                 <h5 class="title">Essential Links</h5>
                 <ul class="list-unstyled links">
                   <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                   </li>
                   <li>
                     <a href="cart.html">Cart</a>
@@ -97,7 +97,7 @@
               </div>
               <div class="col-lg-3 col-md-6 col-sm-9 col-10">
                 <h5 class="title">Suscríbete a nuestro boletín</h5>
-                <form action="index.html">
+                <form action="index.php">
                   <div class="input-group mb-16">
                     <input type="email" class="form-control" id="email" name="email" required="" placeholder="Your Email">
                   </div>

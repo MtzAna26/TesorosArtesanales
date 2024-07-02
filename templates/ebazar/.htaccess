@@ -1,5 +1,0 @@
-RewriteEngine on 
-
-RewriteEngine Cond %{REQUEST_FILENAME} !-f
-RewriteEngine Cond %{REQUEST_FILENAME} !-d
-RewriteRule ^( [^/]+ )$ index.php?view=$1 [L,QSA]

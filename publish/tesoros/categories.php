@@ -27,7 +27,7 @@
                     <span>OFF</span>
                   </div>
                   <h4>JENGA</h4>
-                  <a href="product-detail.html" class="cus-btn dark">Shop Now</a>
+                  <a href="shop.php" class="cus-btn dark">Shop Now</a>
                 </div>
               </div>
             </div>

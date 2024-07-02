@@ -10,13 +10,13 @@
       <div class="collapse navbar-collapse text-start" id="mynavbar">
         <ul class="navbar-nav mainmenu m-0">
           <li class="menu-item">
-            <a href="inicio.php" class="active">Home</a>
+            <a href="index" class="active">Home</a>
           </li>
           <li class="menu-item">
             <a href="shop.php">Shop</a>
           </li>
           <li class="menu-item">
-            <a href="about.html">About</a>
+            <a href="about.php">About</a>
           </li>
           <li class="menu-item-has-children">
             <a href="javascript:void(0);">Pages</a>
@@ -25,7 +25,7 @@
                 <a href="product-detail.html">Product Detail</a>
               </li>
               <li class="menu-item">
-                <a href="cart.html">Cart</a>
+                <a href="cart.php">Cart</a>
               </li>
               <li class="menu-item">
                 <a href="checkout.html">Checkout</a>

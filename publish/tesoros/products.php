@@ -526,7 +526,7 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="shop.php" class="cus-btn bordered" id="load-more-btn">Descubrir más</a>
+      <a href="shop" class="cus-btn bordered" id="load-more-btn">Descubrir más</a>
     </div>
   </div>
 </section>

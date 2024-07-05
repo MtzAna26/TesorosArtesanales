@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <nav class="navbar navbar-expand-xl">
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="inicio">
         <img alt="Tesoros Artesanales" src="assets/media/tesoroslogo.jpg">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -10,13 +10,16 @@
       <div class="collapse navbar-collapse text-start" id="mynavbar">
         <ul class="navbar-nav mainmenu m-0">
           <li class="menu-item">
-            <a href="index" class="active">Home</a>
+            <a href="inicio" class="active">Home</a>
           </li>
           <li class="menu-item">
-            <a href="shop.php">Shop</a>
+            <a href="shop">Shop</a>
           </li>
           <li class="menu-item">
-            <a href="about.php">About</a>
+            <a href="about">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="blog">BLOG</a>
           </li>
           <li class="menu-item-has-children">
             <a href="javascript:void(0);">Pages</a>

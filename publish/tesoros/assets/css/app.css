@@ -1372,15 +1372,15 @@ strong {
 }
 @media (max-width: 1199px) {
   .header nav .navbar-nav .menu-item a:hover {
-    color: #EC7755;
+    color: #014912;
   }
 }
 .header nav .navbar-nav .menu-item a.active {
-  color: #014912;
+  color: #2a7e3e;
 }
 @media (max-width: 1199px) {
   .header nav .navbar-nav .menu-item a.active {
-    color: #EC7755;
+    color: #014912;
     background: transparent;
   }
 }
@@ -2694,7 +2694,7 @@ strong {
   }
 }
 
-
+/* BLOG*/
 
 
 

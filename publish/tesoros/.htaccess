@@ -1,5 +1,11 @@
 RewriteEngine On
+
+# Si la solicitud no es un directorio
 RewriteCond %{REQUEST_FILENAME} !-d
+# Y si la solicitud es un archivo PHP
 RewriteCond %{REQUEST_FILENAME}.php -f
+# Reescribe la URL eliminando la extensión .php
 RewriteRule ^([^/]+)/?$ $1.php [L]
 
+# Reescribe las URLs para artículos
+RewriteRule ^articulo/(.*)$ index.php?view=articulo&slug=$1 [L,QSA]

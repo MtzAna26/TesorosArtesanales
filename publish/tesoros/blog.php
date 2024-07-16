@@ -12,6 +12,8 @@ $token = 'af9365d40a03c94852cb8241818b7ab4c16';
   <title>Tesoros Artesanales - Blog</title>
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="assets/media/tesoroslogo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <!-- All CSS files -->
   <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
@@ -43,7 +45,7 @@ $token = 'af9365d40a03c94852cb8241818b7ab4c16';
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="welcome-message mt-4 p-4 rounded shadow-sm" style="background-color: #f8f9fa;">
-            <h4 class="text-center font-weight-bold" style="color: #6c757d;">¡Bienvenidos a nuestro Blog de Tesoros Artesanales!</h4>
+            <h4 class="text-center font-weight-bold" style="color: #6c757d;">¡Bienvenidos a Nuestro Blog: Descubriendo el Mundo de los Tesoros Artesanales!</h4>
             <p class="text-justify mt-3" style="color: #495057; font-size: 1.1em;">
               Nos alegra tenerte aquí. En este espacio encontrarás artículos y noticias sobre la riqueza y diversidad de los juguetes artesanales mexicanos. Explora, aprende y disfruta de cada historia que tenemos para ti.
             </p>
@@ -63,10 +65,13 @@ $token = 'af9365d40a03c94852cb8241818b7ab4c16';
               <img class="img-fluid post-image" :src="global_public_repo + '/' + a.IMAGEN" alt="Blog Image">
             </a>
             <div class="post-content mt-3">
-              <h5 class="post-title">{{ a.TITULO_ARTICULO }}</h5>
+              <a :href="'https://dev.clevertechnology.com.mx/dev/anamart/clevercloud/publish/tesoros/articulo/un_viaje_a_traves_del_tiempo_la_historia_de_los_juguetes_artesanales_en_mexico'">
+                <h5 class="post-title">{{ a.TITULO_ARTICULO }}</h5>
+              </a>
               <p>{{ a.RESUMEN }}</p>
-              <p class="post-meta"><strong>Autor:</strong> {{ a.AUTOR_ARTICULO }}</p>
-              <p class="post-meta"><strong>Fecha:</strong> {{ a.FECHA_PUBLICACION }}</p>
+              <p class="post-meta"><strong><i class="fas fa-user"></i> Autor:</strong> {{ a.AUTOR_ARTICULO }}</p>
+              <p class="post-meta"><strong><i class="fas fa-tags"></i> Categoría:</strong> {{ a.CATEGORIA }}</p>
+              <p class="post-meta"><strong><i class="fas fa-calendar-alt"></i> Fecha de Publicación:</strong> {{ a.FECHA_PUBLICACION }}</p>
             </div>
           </div>
         </div>

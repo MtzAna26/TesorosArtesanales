@@ -1356,7 +1356,7 @@ strong {
   font-weight: 400;
   font-size: 21px;
   line-height: 140%;
-  color: #54575C;
+  color: #000000;
   margin-right: 32px;
   transition: all 0.5s ease-in-out;
 }
@@ -1368,19 +1368,19 @@ strong {
 }
 .header nav .navbar-nav .menu-item a:hover {
   transition: all 0.5s ease-in-out;
-  color: #EC7755;
+  color: #905aa8;
 }
 @media (max-width: 1199px) {
   .header nav .navbar-nav .menu-item a:hover {
-    color: #014912;
+    color: #905aa8;
   }
 }
 .header nav .navbar-nav .menu-item a.active {
-  color: #2a7e3e;
+  color: #351b41;
 }
 @media (max-width: 1199px) {
   .header nav .navbar-nav .menu-item a.active {
-    color: #014912;
+    color: #351b41;
     background: transparent;
   }
 }
@@ -1404,19 +1404,19 @@ strong {
 }
 .header nav .navbar-nav .menu-item-has-children a:hover {
   transition: all 0.5s ease-in-out;
-  color: #EC7755;
+  color: #ae82c2;
 }
 @media (max-width: 1199px) {
   .header nav .navbar-nav .menu-item-has-children a:hover {
-    color: #EC7755;
+    color: #351b41;
   }
 }
 .header nav .navbar-nav .menu-item-has-children a.active {
-  color: #EC7755;
+  color: #351b41;
 }
 @media (max-width: 1199px) {
   .header nav .navbar-nav .menu-item-has-children a.active {
-    color: #EC7755;
+    color: #351b41;
     background: transparent;
   }
 }
@@ -1534,7 +1534,7 @@ strong {
   font-weight: 100;
 }
 .header nav .right-content .list li a i:hover {
-  color: #EC7755;
+  color: #5cc048;
 }
 .header nav .right-content .list li:first-child a {
   margin-left: 16px;
@@ -2708,7 +2708,7 @@ strong {
 
 
 .page-start-banner {
-  background: url(../media/banner/fondoshop.jpg);
+  background: url(../media/banner/banner-artesanias.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -2743,7 +2743,7 @@ strong {
   font-size: 80px;
   line-height: 120%;
   letter-spacing: -0.04em;
-  color: #2C2D2F;
+  color: #000000;
   font-family: "Roboto Serif", serif;
 }
 @media (max-width: 1440px) {
@@ -3817,3 +3817,4 @@ strong {
 
 
 /*# sourceMappingURL=app.css.map */
+

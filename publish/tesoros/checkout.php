@@ -1,209 +1,331 @@
+<?php
+session_start();
+
+// Guardar el carrito y el total en la sesión al llegar desde cart.php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['cart']) && isset($_POST['cartTotal'])) {
+        $_SESSION['cart'] = json_decode($_POST['cart'], true);
+        $_SESSION['cartTotal'] = $_POST['cartTotal'];
+    }
+}
+
+function calculateSubtotal() {
+    $subtotal = 0;
+    if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $product) {
+            $subtotal += $product['price'] * $product['quantity'];
+        }
+    }
+    return $subtotal;
+}
+
+function calculateShipping() {
+    $shipping = 100; 
+    return $shipping;
+}
+
+function calculateTotal() {
+    return calculateSubtotal() + calculateShipping();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tesoros Artesanales - Tienda</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/media/tesoroslogo.jpg">
-  <!-- All CSS files -->
-  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
-  <link rel="stylesheet" href="assets/css/vendor/slick.css">
-  <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-  <link rel="stylesheet" href="assets/css/app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesoros Artesanales - Verificar</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/tesoroslogo.jpg">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style>
+        .payment-methods {
+            margin-top: 20px;
+        }
+        .payment-methods h3 {
+            margin-bottom: 20px;
+        }
+        .payment-methods .radio-panel {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+        .payment-methods .radio-panel label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        .payment-methods .radio-panel input[type="radio"] {
+            margin-right: 10px;
+        }
+        .payment-methods .radio-panel img {
+            max-height: 20px;
+            margin-right: 10px;
+        }
+        .payment-methods .radio-panel-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .payment-methods .radio-panel input[type="radio"]:checked + .radio-panel-content {
+            display: block;
+        }
+        .payment-summary {
+            display: none;
+        }
+        .shipping-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="modules/checkout.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-
 <body>
+    <?php include 'header.php'; ?>
 
-  <?php include 'header.php'; ?>
+    <section class="page-start-banner">
+        <div class="container">
+            <h2 class="title">Checkout</h2>
+        </div>
+    </section>
 
-  <section class="page-start-banner">
-    <div class="container">
-      <h2 class="title">Verificar</h2>
-    </div>
-  </section>
-  <section class="checkout pt-96 pb-48">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 mb-48 mb-xl-0">
-                            <div class="heading">
-                                <h4>Shipping Detail</h4>
-                            </div>
-                            <div class="design-block shipping">
-                                <form action="index.html">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="_firstname" name="first_name" required="" placeholder="First Name">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Detalles de la Compra</h3>
+                        <div class="cart-items">
+                            <?php
+                            if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                                foreach ($_SESSION['cart'] as $product) {
+                                    echo '
+                                        <div class="cart-item mb-3 pb-3 border-bottom">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-3">
+                                                    <img src="'.$product['image'].'" class="img-fluid rounded" alt="'.$product['name'].'">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h5 class="mb-2">'.$product['name'].'</h5>
+                                                    <p class="mb-1">Precio: $'.$product['price'].'</p>
+                                                    <p class="mb-0">Cantidad: '.$product['quantity'].'</p>
+                                                </div>
+                                                <div class="col-md-3 text-end">
+                                                    <p class="font-weight-bold mb-0">Total: $'.($product['price'] * $product['quantity']).'</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="_lastname" name="last_name" required="" placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="email" class="form-control" id="_email" name="email" required="" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="_phone" name="phone" required="" placeholder="Phone Number">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="_country" name="country" required="" placeholder="Country">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="_state" name="state" required="" placeholder="State / County">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="_houseadress" name="house_address" required="" placeholder="House no and street name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="_appartmentadress" name="apartment_address" placeholder="Apartment, suite, (optional)">
-                                            </div>
-                                        </div>
-                                        <div class="formGroup2">
-                                            <input type="checkbox" id="keepcheck">
-                                            <label for="keepcheck"> Billing Address Same As Shipping Address</label>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="heading">
-                                <h4>Billing Detail</h4>
-                            </div>
-                            <div class="design-block billing">
-                                <form action="index.html">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="firstname" name="first_name" required="" placeholder="First Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="lastname" name="last_name" required="" placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="email" class="form-control" id="email" name="email" required="" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="phone" name="phone" required="" placeholder="Phone Number">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="country" name="country" required="" placeholder="Country">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="state" name="state" required="" placeholder="State / County">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="houseadress" name="house_address" required="" placeholder="House no and street name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-group mb-32">
-                                                <input type="text" class="form-control" id="appartmentadress" name="apartment_address" placeholder="Apartment, suite, (optional)">
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </form>
-                            </div>
+                                        </div>';
+                                }
+                            } else {
+                                echo '<p class="text-muted">No hay productos en el carrito.</p>';
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Cart Area end -->
+            </div>
 
-            <!-- Cart Area start -->
-           
-            <section class="cart pt-48 pb-48">
-  <div class="container">
-    <div class="row">
-      <div class="heading">
-        <h4>Cart Items</h4>
-      </div>
-      <div class="col-xl-8 col-lg-12 d-lg-block d-none">
-        <table id="checkout-cart-table" class="cart-table-lg">
-          <thead>
-            <tr class="upper-row">
-              <th>Producto</th>
-              <th>Precio</th>
-              <th>Cantidad</th>
-              <th>Subtotal</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Aquí se insertarán las filas del carrito dinámicamente -->
-          </tbody>
-        </table>
-      </div>
+            <div id="vue-content-checkout" class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Resumen de la Compra</h3>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal:</span>
+                            <span>${{ subtotal }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Envío:</span>
+                            <span>${{ shipping }}</span>
+                        </div>
+                        <div class="d-flex justify-content-between font-weight-bold mt-3">
+                            <span>Total:</span>
+                            <span>${{ total }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm shipping-card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Información de Envío</h3>
+                        <form id="shipping-form" @submit.prevent="mostrarMetodoPago">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" v-model="datosOrden.NOMBRE" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="apellidos" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" id="apellidos" v-model="datosOrden.APELLIDOS" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" v-model="datosOrden.EMAIL" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="telefono" v-model="datosOrden.TELEFONO" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pais" class="form-label">País/Región</label>
+                                <input type="text" class="form-control" id="pais" v-model="datosOrden.PAIS" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="estado" class="form-label">Estado</label>
+                                    <input type="text" class="form-control" id="estado" v-model="datosOrden.ESTADO" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="municipio" class="form-label">Ciudad</label>
+                                    <input type="text" class="form-control" id="municipio" v-model="datosOrden.MUNICIPIO" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="calle" class="form-label">Calle</label>
+                                <input type="text" class="form-control" id="calle" v-model="datosOrden.CALLE" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="num_exterior" class="form-label">Num. Exterior</label>
+                                    <input type="text" class="form-control" id="num_exterior" v-model="datosOrden.NUM_EXTERIOR" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="codigo_postal" class="form-label">Código Postal</label>
+                                    <input type="text" class="form-control" id="codigo_postal" v-model="datosOrden.CODIGO_POSTAL" required>
+                                </div>
+                                <div class="mb-3">
+                    <label for="notas_cliente">Notas para el vendedor</label>
+                    <textarea class="form-control" id="notas_cliente" v-model="datosOrden.NOTAS_CLIENTE"></textarea>
+                </div>
+
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Seleccionar Método de Pago</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm payment-methods" v-if="mostrarPago">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Método de Pago</h3>
+                        <form @submit.prevent="enviarOrden">
+                            <div class="radio-panel">
+                                <label>
+                                    <input type="radio" name="payment-method" value="credit-card" v-model="datosOrden.METODO_PAGO" required>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+                                    Tarjeta de Crédito/Débito
+                                </label>
+                                <div class="radio-panel-content">
+                                    <div class="mb-3">
+                                        <label for="card-number" class="form-label">Número de Tarjeta</label>
+                                        <input type="text" class="form-control" id="card-number" v-model="datosOrden.NUM_TARJETA" required>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="expiry-date" class="form-label">Fecha de Expiración</label>
+                                            <input type="text" class="form-control" id="expiry-date" v-model="datosOrden.FECHA_EXPIRACION" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cvv" class="form-label">CVV</label>
+                                            <input type="text" class="form-control" id="cvv" v-model="datosOrden.CVV" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="radio-panel">
+                                <label>
+                                    <input type="radio" name="payment-method" value="paypal" v-model="datosOrden.METODO_PAGO" required>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                                    PayPal
+                                </label>
+                                <div class="radio-panel-content">
+                                    <p>Será redirigido a PayPal para completar su compra de forma segura.</p>
+                                </div>
+                            </div>
+                            <div class="radio-panel">
+                            <label>
+    <input type="radio" name="payment-method" value="mercado-pago" v-model="datosOrden.PAGO_CON" required>
+    <img src="https://img.icons8.com/color/48/000000/mercado-pago.png" alt="Mercado Pago">
+    Mercado Pago
+</label>
+
+                                <div class="radio-panel-content">
+                                    <p>Será redirigido a Mercado Pago para completar su compra de forma segura.</p>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">Confirmar y Pagar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="payment-summary" v-if="mostrarPago">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <span>${{ subtotal }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Envío:</span>
+                        <span>${{ shipping }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between font-weight-bold mt-3">
+                        <span>Total:</span>
+                        <span>${{ total }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
 
-    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-   
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    <script>
+        new Vue({
+            el: '#vue-content-checkout',
+            data: {
+                datosOrden: {
+                    NOMBRE: '',
+                    APELLIDOS: '',
+                    EMAIL: '',
+                    TELEFONO: '',
+                    PAIS: '',
+                    ESTADO: '',
+                    MUNICIPIO: '',
+                    CALLE: '',
+                    NUM_EXTERIOR: '',
+                    CODIGO_POSTAL: '',
+                    METODO_PAGO: '',
+                    NUM_TARJETA: '',
+                    FECHA_EXPIRACION: '',
+                    CVV: ''
+                },
+                mostrarPago: false,
+                subtotal: <?php echo calculateSubtotal(); ?>,
+                shipping: <?php echo calculateShipping(); ?>,
+                total: <?php echo calculateTotal(); ?>
+            },
+            methods: {
+                mostrarMetodoPago() {
+                    this.mostrarPago = true;
+                    document.querySelector('.shipping-card').scrollIntoView({ behavior: 'smooth' });
+                },
+                enviarOrden() {
+                    // Lógica para enviar la orden
+                }
+            }
+        });
+    </script>
+    <?php include 'cart.php'; ?>
+    <?php include 'footer.php'; ?>
 
-  console.log('Cart Items:', cart); 
-
-  function updateCheckoutCartView() {
-    const checkoutCartTableBody = document.getElementById('checkout-cart-table').querySelector('tbody');
-    checkoutCartTableBody.innerHTML = '';
-
-    let totalPrice = 0;
-
-    cart.forEach((item) => {
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td class="img-block"><img src="${item.image}" alt="${item.name}" style="max-width: 50px;"></td>
-        <td class="price-number">$${item.price.toFixed(2)}</td>
-        <td>${item.quantity}</td>
-        <td class="price-number">$${(item.price * item.quantity).toFixed(2)}</td>
-      `;
-      checkoutCartTableBody.appendChild(row);
-
-      totalPrice += item.price * item.quantity;
-    });
-
-    console.log('Total Price:', totalPrice);
-
-
-    document.getElementById('checkout-total').textContent = '$' + totalPrice.toFixed(2);
-  }
-
-  updateCheckoutCartView();
-});
-
-</script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/vendor/slick.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
-
 </html>

@@ -9,7 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-function calculateSubtotal() {
+function calculateSubtotal()
+{
     $subtotal = 0;
     if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $product) {
@@ -19,18 +20,22 @@ function calculateSubtotal() {
     return $subtotal;
 }
 
-function calculateShipping() {
-    $shipping = 100; 
+function calculateShipping()
+{
+    $shipping = 0;
     return $shipping;
 }
 
-function calculateTotal() {
+function calculateTotal()
+{
     return calculateSubtotal() + calculateShipping();
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,50 +47,13 @@ function calculateTotal() {
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <style>
-        .payment-methods {
-            margin-top: 20px;
-        }
-        .payment-methods h3 {
-            margin-bottom: 20px;
-        }
-        .payment-methods .radio-panel {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            padding: 15px;
-        }
-        .payment-methods .radio-panel label {
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-        }
-        .payment-methods .radio-panel input[type="radio"] {
-            margin-right: 10px;
-        }
-        .payment-methods .radio-panel img {
-            max-height: 20px;
-            margin-right: 10px;
-        }
-        .payment-methods .radio-panel-content {
-            display: none;
-            margin-top: 10px;
-        }
-        .payment-methods .radio-panel input[type="radio"]:checked + .radio-panel-content {
-            display: block;
-        }
-        .payment-summary {
-            display: none;
-        }
-        .shipping-card {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-        }
+        /* Estilos existentes */
     </style>
     <script src="modules/checkout.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
     <?php include 'header.php'; ?>
 
@@ -109,15 +77,15 @@ function calculateTotal() {
                                         <div class="cart-item mb-3 pb-3 border-bottom">
                                             <div class="row align-items-center">
                                                 <div class="col-md-3">
-                                                    <img src="'.$product['image'].'" class="img-fluid rounded" alt="'.$product['name'].'">
+                                                    <img src="' . $product['image'] . '" class="img-fluid rounded" alt="' . $product['name'] . '">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <h5 class="mb-2">'.$product['name'].'</h5>
-                                                    <p class="mb-1">Precio: $'.$product['price'].'</p>
-                                                    <p class="mb-0">Cantidad: '.$product['quantity'].'</p>
+                                                    <h5 class="mb-2">' . $product['name'] . '</h5>
+                                                    <p class="mb-1">Precio: $' . $product['price'] . '</p>
+                                                    <p class="mb-0">Cantidad: ' . $product['quantity'] . '</p>
                                                 </div>
                                                 <div class="col-md-3 text-end">
-                                                    <p class="font-weight-bold mb-0">Total: $'.($product['price'] * $product['quantity']).'</p>
+                                                    <p class="font-weight-bold mb-0">Total: $' . ($product['price'] * $product['quantity']) . '</p>
                                                 </div>
                                             </div>
                                         </div>';
@@ -200,10 +168,9 @@ function calculateTotal() {
                                     <input type="text" class="form-control" id="codigo_postal" v-model="datosOrden.CODIGO_POSTAL" required>
                                 </div>
                                 <div class="mb-3">
-                    <label for="notas_cliente">Notas para el vendedor</label>
-                    <textarea class="form-control" id="notas_cliente" v-model="datosOrden.NOTAS_CLIENTE"></textarea>
-                </div>
-
+                                    <label for="notas_cliente">Notas para el vendedor</label>
+                                    <textarea class="form-control" id="notas_cliente" v-model="datosOrden.NOTAS_CLIENTE"></textarea>
+                                </div>
                             </div>
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary">Seleccionar Método de Pago</button>
@@ -222,7 +189,7 @@ function calculateTotal() {
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
                                     Tarjeta de Crédito/Débito
                                 </label>
-                                <div class="radio-panel-content">
+                                <div class="radio-panel-content" v-if="datosOrden.METODO_PAGO === 'credit-card'">
                                     <div class="mb-3">
                                         <label for="card-number" class="form-label">Número de Tarjeta</label>
                                         <input type="text" class="form-control" id="card-number" v-model="datosOrden.NUM_TARJETA" required>
@@ -239,55 +206,65 @@ function calculateTotal() {
                                     </div>
                                 </div>
                             </div>
+
                             <div class="radio-panel">
                                 <label>
                                     <input type="radio" name="payment-method" value="paypal" v-model="datosOrden.METODO_PAGO" required>
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
                                     PayPal
                                 </label>
-                                <div class="radio-panel-content">
+                                <div class="radio-panel-content" v-if="datosOrden.METODO_PAGO === 'paypal'">
                                     <p>Será redirigido a PayPal para completar su compra de forma segura.</p>
                                 </div>
                             </div>
-                            <div class="radio-panel">
-                            <label>
-    <input type="radio" name="payment-method" value="mercado-pago" v-model="datosOrden.PAGO_CON" required>
-    <img src="https://img.icons8.com/color/48/000000/mercado-pago.png" alt="Mercado Pago">
-    Mercado Pago
-</label>
 
-                                <div class="radio-panel-content">
+                            <div class="radio-panel">
+                                <label>
+                                    <input type="radio" name="payment-method" value="mercado-pago" v-model="datosOrden.METODO_PAGO" required>
+                                    <img src="https://img.icons8.com/color/48/000000/mercado-pago.png" alt="Mercado Pago">
+                                    Mercado Pago
+                                </label>
+                                <div class="radio-panel-content" v-if="datosOrden.METODO_PAGO === 'mercado-pago'">
                                     <p>Será redirigido a Mercado Pago para completar su compra de forma segura.</p>
                                 </div>
                             </div>
+
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-success">Confirmar y Pagar</button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="payment-summary" v-if="mostrarPago">
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Subtotal:</span>
-                        <span>${{ subtotal }}</span>
-                    </div>
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Envío:</span>
-                        <span>${{ shipping }}</span>
-                    </div>
-                    <div class="d-flex justify-content-between font-weight-bold mt-3">
-                        <span>Total:</span>
-                        <span>${{ total }}</span>
-                    </div>
-                </div>
+
+
+
+                </form>
             </div>
         </div>
     </div>
+    </div>
+    </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) : ?>
+                // Imprimir el carrito en la consola
+                console.log("Carrito de compras:", <?php echo json_encode($_SESSION['cart']); ?>);
+            <?php endif; ?>
+        });
+
+        // Pasar los valores calculados desde PHP a JavaScript
+        const subtotal = <?php echo json_encode(calculateSubtotal()); ?>;
+        const shipping = <?php echo json_encode(calculateShipping()); ?>;
+        const total = <?php echo json_encode(calculateTotal()); ?>;
+
         new Vue({
             el: '#vue-content-checkout',
             data: {
+                subtotal: subtotal,
+                shipping: shipping,
+                total: total,
+                mostrarPago: false,
                 datosOrden: {
                     NOMBRE: '',
                     APELLIDOS: '',
@@ -302,30 +279,29 @@ function calculateTotal() {
                     METODO_PAGO: '',
                     NUM_TARJETA: '',
                     FECHA_EXPIRACION: '',
-                    CVV: ''
-                },
-                mostrarPago: false,
-                subtotal: <?php echo calculateSubtotal(); ?>,
-                shipping: <?php echo calculateShipping(); ?>,
-                total: <?php echo calculateTotal(); ?>
+                    CVV: '',
+                    NOTAS_CLIENTE: ''
+                }
             },
             methods: {
                 mostrarMetodoPago() {
                     this.mostrarPago = true;
-                    document.querySelector('.shipping-card').scrollIntoView({ behavior: 'smooth' });
                 },
                 enviarOrden() {
-                    // Lógica para enviar la orden
+                    // Enviar la orden al servidor
                 }
             }
         });
     </script>
+
     <?php include 'cart.php'; ?>
     <?php include 'footer.php'; ?>
 
     <script src="assets/js/vendor/jquery.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/vendor/slick.min.js"></script>
-  <script src="assets/js/app.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
 </body>
+
 </html>

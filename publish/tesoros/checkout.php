@@ -32,7 +32,6 @@ function calculateTotal()
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -47,9 +46,8 @@ function calculateTotal()
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <style>
-        /* Estilos existentes */
+        /* Tus estilos aquí */
     </style>
-    <script src="modules/checkout.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
@@ -183,7 +181,7 @@ function calculateTotal()
                     <div class="card-body">
                         <h3 class="card-title mb-4">Método de Pago</h3>
                         <form @submit.prevent="enviarOrden">
-                            <div class="radio-panel">
+                            <!--<div class="radio-panel">
                                 <label>
                                     <input type="radio" name="payment-method" value="credit-card" v-model="datosOrden.METODO_PAGO" required>
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
@@ -216,7 +214,7 @@ function calculateTotal()
                                 <div class="radio-panel-content" v-if="datosOrden.METODO_PAGO === 'paypal'">
                                     <p>Será redirigido a PayPal para completar su compra de forma segura.</p>
                                 </div>
-                            </div>
+                            </div>--->
 
                             <div class="radio-panel">
                                 <label>
@@ -235,20 +233,13 @@ function calculateTotal()
                         </form>
                     </div>
                 </div>
-
-
-
-                </form>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) : ?>
-                // Imprimir el carrito en la consola
                 console.log("Carrito de compras:", <?php echo json_encode($_SESSION['cart']); ?>);
             <?php endif; ?>
         });
@@ -288,7 +279,24 @@ function calculateTotal()
                     this.mostrarPago = true;
                 },
                 enviarOrden() {
-                    // Enviar la orden al servidor
+                    axios.post('pago.php', {
+                        token: 'TEST-7431252399385959-071915-b9943ce6400d3aed248d5c5003c052c3-761591827',
+                        orden: {
+                            productos: <?php echo json_encode($_SESSION['cart']); ?>,
+                            subtotal: this.subtotal,
+                            shipping: this.shipping,
+                            total: this.total,
+                            datosOrden: this.datosOrden
+                        }
+                    })
+                    .then(response => {
+                        alert('Su orden se está procesando. Será redirigido a la página de pago.');
+                        window.location.href = 'pago'; // Redirige al usuario a pago.php
+                    })
+                    .catch(error => {
+                        alert('Hubo un problema al procesar el pago. Por favor, inténtelo de nuevo.');
+                        console.error(error);
+                    });
                 }
             }
         });
@@ -303,5 +311,4 @@ function calculateTotal()
     <script src="assets/js/app.js"></script>
 
 </body>
-
 </html>

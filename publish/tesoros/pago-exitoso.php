@@ -91,7 +91,7 @@
         <div class="logo-container">
             <img src="assets/media/tesoroslogo.jpg" alt="Tesoros Artesanales Logo">
         </div>
-        <a href="inicio.php" class="btn-return">Volver al Inicio</a>
+        <a href="inicio" class="btn-return">Volver al Inicio</a>
     </div>
     <canvas id="confetti" class="confetti"></canvas>
 

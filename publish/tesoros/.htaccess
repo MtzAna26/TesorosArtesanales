@@ -1,9 +1,17 @@
 RewriteEngine On
 
-
+# Reescribe URLs amigables para archivos PHP existentes
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^/]+)/?$ $1.php [L]
 
+# Reescribe las URLs para artículos
+RewriteRule ^articulo/([^/]+)$ index.php?view=articulo&permalink=$1 [L]
 
-RewriteRule ^(.*)articulo/([^/]+)$ index.php?view=articulo&permalink=$2 [L]
+# Reescribe las URLs para productos
+RewriteRule ^producto/([^/]+)$ detalleproducto.php?p=$1 [L]
+
+# Asegúrate de que todas las demás solicitudes se manejen correctamente por index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

@@ -527,6 +527,7 @@
                 <a href="javascript:;" class="cus-btn dark cart-button">Agregar</a>
               </div>
             </div>
+            
           </div>
         </div>
       </div>

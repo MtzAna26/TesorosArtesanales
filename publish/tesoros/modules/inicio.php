@@ -1,3 +1,13 @@
+<?php
+$PRODUCTOS = file_get_contents($global_apiserver . '/public/ecommerce/buscar/', false, $context_post);
+$PRODUCTOS = json_decode($PRODUCTOS, true)["data"];
+echo "<script>
+		let products = JSON.parse('" . json_encode($PRODUCTOS) . "');
+	</script>";
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,6 +51,7 @@
   <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
   <script src="assets/js/vendor/slick.min.js"></script>
   <script src="assets/js/app.js"></script>
+
 
 </body>
 

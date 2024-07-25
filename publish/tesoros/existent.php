@@ -88,7 +88,7 @@
         <div class="product-card">
           <div class="showcase-box">
             <img src="assets/media/products/producto-llaveros.jpg" alt="">
-            <span class="price">$69</span>
+            <span class="price">$200</span>
             <div class="overlay">
               <div class="d-flex align-items-center justify-content-center">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#productQuickView" onclick="showQuickViewImage('assets/media/products/producto-llaveros.jpg')">
@@ -168,7 +168,7 @@
         <div class="product-card">
           <div class="showcase-box">
             <img src="assets/media/products/producto-arbolvida.jpg" alt="">
-            <span class="price">$33</span>
+            <span class="price">$200</span>
             <div class="overlay">
               <div class="d-flex align-items-center justify-content-center">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#productQuickView" onclick="showQuickViewImage('assets/media/products/producto-arbolvida.jpg')">
